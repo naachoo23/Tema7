@@ -24,13 +24,15 @@ let participantes = [
     
   ];
 
-const segundos = participantes.reduce((acc, elem) => {
-    if(elem.equipo == 'Kelme'){
-        acc += (elem.seg);
-        acc+= (elem.min*60);
-    
+const segundos = participantes.reduce((acc, elem, i) => {
+   
+     elem.equipo = "Kelme" ? acc + elem.min * 60 + elem.seg - (i < 3 ? 20 -i * 10 : 0 ): acc;
+        
+    if(i ==  0){
+        acc = elem.seg - 20;
+    }
 
     }
-},0)
+,0)
 console.log(segundos);
   
