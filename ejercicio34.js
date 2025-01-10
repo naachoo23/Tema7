@@ -36,3 +36,9 @@ const segundos = participantes.reduce((acc, elem, i) => {
 ,0)
 console.log(segundos);
   
+
+//segunda forma
+/*
+const rstl = participantes.map((elem, i) => ({seg:elem.min * 60 + elem.seg - i < 3 ? 30 + i * 10 : 0, equipo = e.equipo})).filter(
+e => e.equipo == "Kelme").reduce((acc, elem) => acc + elem.seg , 0)
+*/
