@@ -7,9 +7,9 @@ que el artículo Lápiz tiene una cantidad de 2.
 158
 */
 const carrito = [
-    { nombre: "Lápiz", precio: 1, cantidad: 2, categoria: "A" },
-    { nombre: "Goma", precio: 0.5, cantidad: 1, categoria: "B" },
-    { nombre: "Sacapuntas", precio: 2, cantidad: 1, categoria: "A" }
+    { nombre: "Lápiz", precio: 1, cantidad: 2},
+    { nombre: "Goma", precio: 0.5, cantidad: 1},
+    { nombre: "Sacapuntas", precio: 2, cantidad: 1}
     ];
     const resultado = carrito.reduce((acc,elem) => ({
         nombre : (acc.nombre || "") + elem.nombre + ",",
